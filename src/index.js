@@ -7,6 +7,9 @@ import Game from './infra/view/page/Game.js';
 import * as serviceWorker from './serviceWorker';
 import db from './infra/PersistanceInit.js';
 
+db.version(1).stores({
+    games: `id++, name`
+});
 
 const routing = (
     <MemoryRouter>

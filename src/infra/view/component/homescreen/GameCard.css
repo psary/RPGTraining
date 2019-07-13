@@ -4,7 +4,7 @@ a.card_container {
     flex-wrap: wrap;
     box-shadow: 1px 1px 2px 1px #96999c;
     margin: 0px 50px 50px 0px;
-    width: 400px;
+    flex: 1 0 21%;
     cursor: pointer;
     text-decoration: none;
     color : #000000;

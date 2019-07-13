@@ -1,5 +1,9 @@
 import db from '../PersistanceInit.js'
 
-export function createGame(){
-    db.games.put({name: 'test2'});
+export async function createGame(){
+    let id = await db.games.put({name: 'test2'});
+    console.log(id)
+};
+export function getAllGames(){
+    return db.table('games').toArray();
 };

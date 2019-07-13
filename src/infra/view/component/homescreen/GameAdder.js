@@ -12,7 +12,7 @@ class GameAdder extends Component {
     render() {
         return (
             <div>
-                <Button variant="primary" onclick={this.addGame()}>New Game !</Button>
+                <Button variant="primary" onClick={() => this.addGame()} >New Game !</Button>
             </div>
         );
     }

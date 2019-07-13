@@ -9,8 +9,12 @@ class HomeScreen extends Component {
         return (
             <div>
                 <Header />
-                <GameAdder />
-                <GameList />
+                <div className="add_button">
+                    <GameAdder />
+                </div>
+                <div className="game_list">
+                    <GameList />
+                </div>
             </div>
         );
     }

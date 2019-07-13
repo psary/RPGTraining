@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Button from 'react-bootstrap/Button';
+import Button from '@material-ui/core/Button';
 import './GameAdder.css'
 import { createGame } from '../../../adapter/GameAdapter.js'
 
@@ -11,8 +11,8 @@ class GameAdder extends Component {
 
     render() {
         return (
-            <div>
-                <Button variant="primary" onClick={() => this.addGame()} >New Game !</Button>
+            <div className="button">
+                <Button variant="contained"  color="primary" onClick={() => this.addGame()} >Créer une nouvelle partie !</Button>
             </div>
         );
     }

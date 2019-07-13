@@ -1,0 +1,76 @@
+.CardList-container {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+a.card_container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 10px 0px #E0E6EC;
+    margin: 0px 50px 50px 0px;
+    width: 25%;
+    cursor: pointer;
+    text-decoration: none;
+    color : #000000;
+    border-radius: 5px;
+}
+
+a.card_container:nth-child(3n){
+    margin-right: 0px;
+}
+
+.card_header {
+    font-size: 14px;
+    line-height: 10px;
+    background-color: #F8F9FA;
+    padding: 5px 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_header-left {
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+}
+.card_header-left :first-child {
+    font-weight: 600;
+    color:#5A5C60;
+}
+
+.card_header-left :last-child {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.card_header-right {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    line-height: 0;
+}
+
+.card_content {
+    padding: 5px 10px;
+    background-color: #ffffff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+   
+}
+.card_content p {
+    border-bottom: 1px solid #e1e1e1;
+    padding-top: 15px;
+    font-size: 14px;
+    margin: 0;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.card_content p:last-child {
+    border: none;
+}

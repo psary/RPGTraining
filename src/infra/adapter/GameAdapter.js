@@ -7,3 +7,7 @@ export async function createGame(){
 export function getAllGames(){
     return db.table('games').toArray();
 };
+
+export function getGame(id){
+    return db.table('games').get(id);
+};

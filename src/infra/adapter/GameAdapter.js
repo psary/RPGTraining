@@ -11,3 +11,7 @@ export function getAllGames(){
 export function getGame(id){
     return db.table('games').get(id);
 };
+
+export function deleteGame(id){
+    return db.table('games').delete(id);
+};

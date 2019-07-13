@@ -6,14 +6,21 @@ import CardActions from '@material-ui/core/CardActions';
 import IconButton from '@material-ui/core/IconButton';
 import Button from '@material-ui/core/Button';
 import { withRouter } from 'react-router-dom'
+import { deleteGame } from '../../../adapter/GameAdapter.js'
 class GameCard extends Component {
 
     constructor(props){
         super(props);
 
     }
+
     go(id){
         this.props.history.push({pathname: '/game/'+id, id: id});
+    }
+    
+    delete(id){
+        deleteGame(id);
+        this.props.refresh()
     }
   
     render() {
@@ -31,7 +38,7 @@ class GameCard extends Component {
                 </div>
                 <CardActions classes={{root: "card_action"}}>
                     <IconButton>
-                        <DeleteIcon color="red"/>
+                        <DeleteIcon color="red" onClick={() => this.delete(data.id)}/>
                     </IconButton>
                     <Button variant="contained"  color="primary" onClick={() => this.go(data.id)} >Reprendre</Button>
                 </CardActions>

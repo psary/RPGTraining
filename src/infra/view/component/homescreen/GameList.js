@@ -21,11 +21,15 @@ class GameList extends Component {
         }));
     }
 
+    forceRender(){
+        this.getGames();
+    }
+
     render() {
         return (
             <div className="car_list">
                 {
-                    this.state.games.length > 0 ? this.state.games.map((game) => {return <GameCard data={game} />}) : ''
+                    this.state.games.length > 0 ? this.state.games.map((game) => {return <GameCard data={game} refresh={this.forceRender.bind(this)} />}) : ''
                 }
             </div>
         );

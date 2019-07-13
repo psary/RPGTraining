@@ -12,7 +12,7 @@ class GameAdder extends Component {
     render() {
         return (
             <div className="button">
-                <Button variant="contained"  color="primary" onClick={() => this.addGame()} >Créer une nouvelle partie !</Button>
+                <Button variant="contained"  color="primary" onClick={() => this.addGame()} >Nouvelle partie</Button>
             </div>
         );
     }

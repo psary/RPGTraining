@@ -7,13 +7,12 @@ class GameList extends Component {
     constructor(props){
         super(props);
         this.state = {
-            games: []
+            games: [],
         }
     }
 
     componentDidMount(){
         this.getGames();
-        console.log(this.state.games);   
     }
 
     getGames(){
@@ -22,12 +21,11 @@ class GameList extends Component {
         }));
     }
 
-
     render() {
         return (
             <div className="car_list">
                 {
-                    this.state.games.length > 0 ? this.state.games.map((game) => {return <GameCard data={game}/>}) : ''
+                    this.state.games.length > 0 ? this.state.games.map((game) => {return <GameCard data={game} />}) : ''
                 }
             </div>
         );

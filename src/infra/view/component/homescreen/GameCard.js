@@ -19,7 +19,7 @@ class GameCard extends Component {
     render() {
         const data = this.props.data
         return (
-            <Card className="card_container" to={{ pathname: `/game/` + data.id, id: data.id}} >
+            <Card className="card_container" classses={{root: "card_container"}} >
                 <div className="card_header">
                     <div className="card_header-left">
                         <p>{data.name}</p>

@@ -1,14 +1,8 @@
-.CardList-container {
-    display: flex;
-    justify-content: start;
-    flex-wrap: wrap;
-}
-
 a.card_container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    box-shadow: 0px 0px 10px 0px #E0E6EC;
+    box-shadow: 1px 1px 2px 1px #96999c;
     margin: 0px 50px 50px 0px;
     width: 25%;
     cursor: pointer;

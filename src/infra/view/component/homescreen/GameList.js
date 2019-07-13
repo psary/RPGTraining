@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './GameList.css'
 import { getAllGames } from '../../../adapter/GameAdapter.js'
+import GameCard from './GameCard';
 
 class GameList extends Component {
     constructor(props){
@@ -24,9 +25,9 @@ class GameList extends Component {
 
     render() {
         return (
-            <div>
+            <div className="car_list">
                 {
-                    this.state.games.length > 0 ? this.state.games.map((game) => {return game.name + ' - '}) : ''
+                    this.state.games.length > 0 ? this.state.games.map((game) => {return <GameCard data={game}/>}) : ''
                 }
             </div>
         );

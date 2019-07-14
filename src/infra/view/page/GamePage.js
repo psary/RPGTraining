@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Header from '../common/Header.js'
-import './Game.css'
+import './GamePage.css'
 import { getGame } from '../../adapter/GameAdapter.js'
 
-class Game extends Component {
+class GamePage extends Component {
 
     constructor(props){
         super(props);
@@ -26,4 +26,4 @@ class Game extends Component {
     }
 }
 
-export default Game;
+export default GamePage;

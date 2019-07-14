@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import CreateGame from './infra/view/page/CreateGame';
+import GamePage from './infra/view/page/GamePage';
 
 const theme = createMuiTheme({
   palette: {
@@ -11,13 +11,13 @@ const theme = createMuiTheme({
   },
 )
 
-function Create() {
+function Game(props) {
   return (
     <MuiThemeProvider theme={theme}>
       <CssBaseline />
-      <CreateGame/>
+      <GamePage history={props.history} location={props.location} match={props.match}/>
     </MuiThemeProvider>
   );
 }
 
-export default Create;
+export default Game;

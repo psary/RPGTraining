@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import { Route, MemoryRouter } from 'react-router-dom'
 import './index.css';
 import App from './App';
-import Game from './infra/view/page/Game.js';
 import * as serviceWorker from './serviceWorker';
 import db from './infra/PersistanceInit.js';
 import 'moment/locale/fr';
 import Create from './Create';
+import Game from './Game';
 
 db.version(1).stores({
     games: `id++, name, createdAt`

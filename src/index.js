@@ -8,12 +8,14 @@ import db from './infra/PersistanceInit.js';
 import 'moment/locale/fr';
 import Create from './Create';
 import Game from './Game';
+import HttpsRedirect from 'react-https-redirect';
 
 db.version(1).stores({
     games: `id++, name, createdAt`
 });
 
 const routing = (
+  <HttpsRedirect>
     <MemoryRouter>
       <div>
         <Route exact path="/" component={App} />
@@ -21,6 +23,7 @@ const routing = (
         <Route path="/create" component={Create} />
       </div>
     </MemoryRouter>
+  </HttpsRedirect>
   )
 
 ReactDOM.render(routing, document.getElementById('root'));

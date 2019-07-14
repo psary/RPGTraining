@@ -27,7 +27,7 @@ class GameList extends Component {
 
     render() {
         return (
-            <div className="car_list">
+            <div className="card_list">
                 {
                     this.state.games.length > 0 ? this.state.games.map((game) => {return <GameCard key={game.id} data={game} refresh={this.forceRender.bind(this)} />}) : ''
                 }

@@ -29,7 +29,7 @@ class GameList extends Component {
         return (
             <div className="car_list">
                 {
-                    this.state.games.length > 0 ? this.state.games.map((game) => {return <GameCard data={game} refresh={this.forceRender.bind(this)} />}) : ''
+                    this.state.games.length > 0 ? this.state.games.map((game) => {return <GameCard key={game.id} data={game} refresh={this.forceRender.bind(this)} />}) : ''
                 }
             </div>
         );

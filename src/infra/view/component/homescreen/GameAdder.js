@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import Button from '@material-ui/core/Button';
 import './GameAdder.css'
-import { createGame } from '../../../adapter/GameAdapter.js'
+import { withRouter } from 'react-router-dom'
 
 class GameAdder extends Component {
 
     addGame(){
-        createGame();
+        this.props.history.push({pathname: '/create'});
     }
 
     render() {
@@ -18,4 +18,4 @@ class GameAdder extends Component {
     }
 }
 
-export default GameAdder;
+export default withRouter(GameAdder);

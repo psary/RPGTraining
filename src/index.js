@@ -6,6 +6,7 @@ import App from './App';
 import Game from './infra/view/page/Game.js';
 import * as serviceWorker from './serviceWorker';
 import db from './infra/PersistanceInit.js';
+import CreateGame from './infra/view/page/CreateGame';
 
 db.version(1).stores({
     games: `id++, name`
@@ -16,6 +17,7 @@ const routing = (
       <div>
         <Route exact path="/" component={App} />
         <Route path="/game/:id" component={Game} />
+        <Route path="/create" component={CreateGame} />
       </div>
     </MemoryRouter>
   )

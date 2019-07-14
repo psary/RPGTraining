@@ -9,11 +9,6 @@ import { withRouter } from 'react-router-dom'
 import { deleteGame } from '../../../adapter/GameAdapter.js'
 class GameCard extends Component {
 
-    constructor(props){
-        super(props);
-
-    }
-
     go(id){
         this.props.history.push({pathname: '/game/'+id, id: id});
     }
@@ -37,8 +32,8 @@ class GameCard extends Component {
                     <p>#Level <b>XX</b></p>
                 </div>
                 <CardActions classes={{root: "card_action"}}>
-                    <IconButton>
-                        <DeleteIcon color="red" onClick={() => this.delete(data.id)}/>
+                    <IconButton onClick={() => this.delete(data.id)}>
+                        <DeleteIcon color="error" />
                     </IconButton>
                     <Button variant="contained"  color="primary" onClick={() => this.go(data.id)} >Reprendre</Button>
                 </CardActions>

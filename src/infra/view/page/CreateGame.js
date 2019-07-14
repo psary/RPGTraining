@@ -10,6 +10,7 @@ import CloseIcon from '@material-ui/icons/Close';
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 import ErrorIcon from '@material-ui/icons/Error';
 import {createGame} from  '../../adapter/GameAdapter.js';
+import { withRouter } from 'react-router-dom'
 
 class CreateGame extends Component {
 
@@ -122,4 +123,4 @@ class CreateGame extends Component {
     }
 }
 
-export default CreateGame;
+export default withRouter(CreateGame);

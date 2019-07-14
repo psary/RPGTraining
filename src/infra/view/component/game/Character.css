@@ -1,0 +1,21 @@
+.characterContainer{
+    min-width: 300px;
+    margin: 10px;
+}
+
+.card_content p {
+    border-bottom: 1px solid #e1e1e1;
+    padding-top: 15px;
+    margin: 0;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex: 3;
+}
+.card_content p b {
+    font-weight: 500;
+    font-size: 14px;
+}
+.card_content p:last-child {
+    border: none;
+}

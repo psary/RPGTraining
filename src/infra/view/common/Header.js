@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import GameAdder from '../component/homescreen/GameAdder.js'
+import GameAdder from '../component/header/GameAdder.js/index.js'
 import './Header.css'
 
 class Header extends Component {

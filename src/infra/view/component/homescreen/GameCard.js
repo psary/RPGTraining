@@ -7,7 +7,13 @@ import IconButton from '@material-ui/core/IconButton';
 import Button from '@material-ui/core/Button';
 import { withRouter } from 'react-router-dom'
 import { deleteGame } from '../../../adapter/GameAdapter.js'
+import moment from 'moment'
 class GameCard extends Component {
+
+    constructor(props){
+        super(props);
+        moment.locale('fr')
+    }
 
     go(id){
         this.props.history.push({pathname: '/game/'+id, id: id});
@@ -30,6 +36,7 @@ class GameCard extends Component {
                 </div>
                 <div className="card_content">
                     <p>#Level <b>XX</b></p>
+                    <p>Depuis <b>{moment(data.createdAt, 'DD/MM/YYYY HH:mm:ss').fromNow(true)}</b></p>
                 </div>
                 <CardActions classes={{root: "card_action"}}>
                     <IconButton onClick={() => this.delete(data.id)}>

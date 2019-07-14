@@ -7,9 +7,10 @@ import Game from './infra/view/page/Game.js';
 import * as serviceWorker from './serviceWorker';
 import db from './infra/PersistanceInit.js';
 import CreateGame from './infra/view/page/CreateGame';
+import 'moment/locale/fr';
 
 db.version(1).stores({
-    games: `id++, name`
+    games: `id++, name, createdAt`
 });
 
 const routing = (

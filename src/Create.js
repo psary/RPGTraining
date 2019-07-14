@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import HomeScreen from './infra/view/page/HomeScreen.js'
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
+import CreateGame from './infra/view/page/CreateGame';
 
 const theme = createMuiTheme({
   palette: {
@@ -10,13 +10,13 @@ const theme = createMuiTheme({
   }
   },
 )
-function App() {
+function Create() {
   return (
     <MuiThemeProvider theme={theme}>
       <CssBaseline />
-      <HomeScreen/>
+      <CreateGame/>
     </MuiThemeProvider>
   );
 }
 
-export default App;
+export default Create;

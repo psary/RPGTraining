@@ -51,8 +51,12 @@ class CreateGame extends Component {
                     <Header />
                     <div className="create_game_form">
                         <TextField
+                            classes={{
+                                root: "textfield-root"
+                            }}
                             id="outlined-name"
                             label="Name"
+                            color="primary"
                             onChange={this.handleChange.bind(this)}
                             margin="normal"
                             className="create_name_input"

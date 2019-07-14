@@ -1,13 +1,14 @@
 .Header {
-    background-color: #ffffff;
+    background-color: #424242;
     height: 40px;
     display: flex;
     padding:10px 20px 10px 20px;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0px 1px 4px #e1e1e1;
+    box-shadow: 0px 1px 4px #5e5d5d;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     margin-bottom: 20px;
+    color: #ffffff;
     }

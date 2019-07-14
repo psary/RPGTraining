@@ -2,13 +2,14 @@
     box-shadow: 1px 1px 2px 1px #96999c;
     margin: 10px 10px 10px 10px;
     border-radius: 5px;
-    min-width: 300px;;
+    min-width: 300px;
+    background-color: #424242;
 }
 
 .card_header {
     font-size: 14px;
     line-height: 10px;
-    background-color: #F8F9FA;
+    background-color: #5c5c5c;
     padding: 5px 10px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -22,13 +23,13 @@
     line-height: 0;
 }
 .card_header-left :first-child {
-    font-weight: 600;
-    color:#5A5C60;
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .card_header-left :last-child {
-    font-size: 12px;
-    font-weight: 600;
+    font-size: 10px;
+    font-weight: 400;
 }
 
 .card_header-right {
@@ -40,7 +41,7 @@
 
 .card_content {
     padding: 5px 10px;
-    background-color: #ffffff;
+    background-color: #424242;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 
@@ -49,12 +50,15 @@
 .card_content p {
     border-bottom: 1px solid #e1e1e1;
     padding-top: 15px;
-    font-size: 14px;
     margin: 0;
     padding-bottom: 15px;
     display: flex;
     justify-content: space-between;
     flex: 3;
+}
+.card_content p b {
+    font-weight: 500;
+    font-size: 14px;
 }
 .card_content p:last-child {
     border: none;

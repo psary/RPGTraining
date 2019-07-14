@@ -7,6 +7,10 @@
     flex-flow: row wrap;
 }
 
+.textfield-root{
+    color: 'white';
+}
+
 .create_name_input{
     margin: 20px;
 }

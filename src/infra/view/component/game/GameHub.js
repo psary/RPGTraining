@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './GameHub.css'
 import Character from './Character';
 import Fight from './Fight';
+import { Loop } from 'react-game-kit';
 
 class GameHub extends Component {
 
@@ -15,8 +16,10 @@ class GameHub extends Component {
     render() {
         return (
             <div className="gamehubContainer">
-                <Character />
-                <Fight />
+                <Loop>
+                    <Character />
+                    <Fight />
+                </Loop>
             </div>
         );
     }
